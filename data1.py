@@ -6,11 +6,10 @@
 class initForm(object):
     def __init__(self):
         self.arr = []
-        self.number = 0
 
-    def initialize(self):
+    def initialize(self, n):
         i = 0
-        while i < self.number:
+        while i < n:
             self.arr.append(i)
             i += 1
 
@@ -51,13 +50,11 @@ def merge(arr1, arr2):
     return arrNew
 
 t = initForm()
-t.number = 7
-t.initialize()
+t.initialize(7)
 t.cunIn(5,0)
 
 m = initForm()
-m.number = 3
-m.initialize()
+m.initialize(3)
 
 
 print(t.arr)
